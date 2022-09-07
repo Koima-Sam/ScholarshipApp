@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid rgb(180, 180, 168);
 }
 
 a{
@@ -37,7 +38,7 @@ span{
   background-size: contain;
   display: flex;
   justify-content: center;;
-  margin-bottom: 4%;
+  margin-bottom: 7%;
 
 }
 form{
@@ -64,13 +65,14 @@ form > h2{
 form p{
   text-align: center;
 }
-input[type="button"]{
+input[type="submit"]{
   background: orange;
   border: none;
   color: white;
   border-radius: 10px;
   text-align: center;
   padding: 2% 6%;
+  cursor: pointer;
   margin: 4% 30% 0%;
 }
 span a{
@@ -86,8 +88,8 @@ span a{
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8%;
-  border: 1px solid lightskyblue;
+  /* margin-bottom: 12%; */
+  /* border: 1px solid lightskyblue; */
 }
 .intro-text h1{
   text-align: center;
@@ -104,7 +106,7 @@ span a{
 }
 .intro-text,.intro img{
   height: 500px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 50%;
 }
 .intro-text{
@@ -126,10 +128,15 @@ span a{
 }
 /* foooter */
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
-  background-color: black;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer div, .footer div > a{
+  color: white;
 }

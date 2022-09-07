@@ -1,6 +1,9 @@
 import React from "react";
 
 function DashBoard(){
-    return <h1>Landiiing page</h1>
+    return(
+        <div className="card">
+        </div>
+    )
 }
 export default DashBoard

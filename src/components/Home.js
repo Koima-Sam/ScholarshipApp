@@ -21,7 +21,7 @@ function Home(){
 
         </div>
 
-        <img src="https://github.com/Koima-Sam/Scholarship-Site/blob/main/Assets/images/bg5-removebg-preview.png?raw=true" alt="preview"/>
+        <img src="https://static.vecteezy.com/system/resources/previews/003/316/526/non_2x/scholarship-concept-with-modern-isometric-or-3d-style-free-vector.jpg" alt="preview"/>
     </div>
     )
 }

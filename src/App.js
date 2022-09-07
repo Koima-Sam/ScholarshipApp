@@ -9,6 +9,7 @@ import Register from "./components/Register";
 import Saved from "./components/Saved";
 
 function App() {
+
   return (
     <div>
       <NavBar />
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/dashboard" element={<DashBoard />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/saved" element={<Saved />} />
-        <Route exact path = "/" element = {<DashBoard />}/>
+        {/* <Route exact path = "/" element = {<DashBoard />}/> */}
       </Routes>
       <Footer />
     </div>
