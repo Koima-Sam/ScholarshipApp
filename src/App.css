@@ -140,3 +140,25 @@ span a{
 .footer div, .footer div > a{
   color: white;
 }
+.scholar{
+  text-align: center;
+  min-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  margin-bottom: 3%;
+}
+.card{
+   /* margin-left: 25%; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+
+}
+.scholar h2{
+  color: orange;
+}
+#btns{
+  bottom: 6px;
+
+}
