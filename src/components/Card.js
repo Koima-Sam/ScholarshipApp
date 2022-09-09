@@ -1,6 +1,24 @@
 import React from "react";
 
-function Card({name,organizer,deadline,description, link}){
+function Card({name,organizer,deadline,description, link,s_id,id, isLogged}){
+    console.log(isLogged)
+    function handleClick(e){
+        
+        if(isLogged===false){
+            alert("login to save a scholarship")
+        }
+        else{
+            fetch('http://localhost:9292/saved_scholarships',{
+            method:"POST",
+            headers:{
+                "Content_Type" : "application/json"
+            },
+            body: JSON.stringify({"scholarship_id":s_id, "user_id":id})
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            }
+    }
     return(
         <div className="scholar">
             <h2>{name}</h2>
@@ -9,8 +27,8 @@ function Card({name,organizer,deadline,description, link}){
             <p>{description}</p>
 
             <div id="btns" className="buttons">
-                <a href="tpp.com">Apply now</a>
-                <a href="ttt.com">Save</a>
+                <a href={link}>Apply now</a>
+                <p className="btns" onClick={handleClick}>Save</p>
             </div>
         </div>
     )
