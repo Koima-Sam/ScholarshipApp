@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-function Home(){
+function Home({isLoggedIn}){
     return(
         // <!--Company Intro-->
     <div className="intro">
@@ -10,13 +10,13 @@ function Home(){
                 <span className="spn2">Scholarships</span> <br/>
                 <span className="extra">
                 Get free Scholarships for every level of <br/>
-                educationthat every student who achieves for a <br/>
-                bright future can get.  &#128512;
+                education. We Offer that every student <br/>
+                who achieves for a bright<br/> future can get.  &#128512;
                 </span>
             </h1>
             <div className="buttons">
-            <NavLink to={'/login'}>Get started</NavLink>
-            <NavLink to={'/dashboard'}>View Scholarships</NavLink>
+            <NavLink to={'/register'}>Get started</NavLink>
+            {isLoggedIn? <NavLink  to={'/dashboard'}>View Scholarships</NavLink> : null}
             </div>
 
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
-function Login(){
+function Login({setId, setLoggedIn}){
     const navigate = useNavigate()
     const[userObj,setUserInput] = useState({email:"",password:""})
    
@@ -15,14 +15,16 @@ function Login(){
         fetch(`http://localhost:9292/users/${userObj.email}`)
         .then(resp => resp.json())
         .then(data =>{
-            data.password === userObj.password ? initiateLogin(): alert("Invalid password")
+            data.password === userObj.password ? initiateLogin(data.id): alert("Invalid password")
         })
         .catch(error=>{
             console.log(error)
             alert('User not found')
         })
     }
-    function initiateLogin(){
+    function initiateLogin(id){
+        setId(id)
+        setLoggedIn(true)
         navigate('/dashboard')
     }
     return (

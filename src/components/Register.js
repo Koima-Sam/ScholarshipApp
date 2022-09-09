@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {NavLink, useNavigate} from 'react-router-dom'
-function Register(){
+function Register({setId, setLoggedIn}){
     const navigate = useNavigate()
     const[user, setUser] = useState({name:"", email:"",phone:"",password:""})
 
@@ -30,6 +30,7 @@ function Register(){
         .then(response => response.json())
         .then(data => {
             console.log(data)
+            setId(data.id)
             navigate('/dashboard')
         } )
         .catch((error)=>console.log(error))
