@@ -8,11 +8,11 @@ function Home({isLoggedIn}){
             <h1>
                 <span>Education</span> <br/>
                 <span className="spn2">Scholarships</span> <br/>
-                <span className="extra">
+                <p className="extra">
                 Get free Scholarships for every level of <br/>
                 education. We Offer that every student <br/>
                 who achieves for a bright<br/> future can get.  &#128512;
-                </span>
+                </p>
             </h1>
             <div className="buttons">
             <NavLink to={'/register'}>Get started</NavLink>
