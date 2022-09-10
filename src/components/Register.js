@@ -38,7 +38,7 @@ function Register({setId, setLoggedIn}){
     return (
         <div className="signUpForm">
             <form onSubmit={validateInputs}>
-                <h2>Fill in the details to create your account</h2>
+                <h2>Fill in the details <br/>to create your account</h2>
                 <input name="name" type={"text"} placeholder="Full Name" value={user.name} onChange={handleChange}/> <br/>
                 <input name="email" type={"email"} placeholder="Email" value={user.email} onChange={handleChange}/><br/>
                 <input name="phone" type={"number"} placeholder="Phone" value={user.phone} onChange={handleChange}/><br/>
