@@ -5,8 +5,9 @@ function NavBar({isLoggedIn, setLoggedIn}) {
   return (
     <div className="navbar">
         <div className="logo">
+          <img src="https://koima-sam.github.io/Scholarship-Site/Assets/images/logo-removebg-preview.png"/>
           <h3>
-            I.Scho<span>LAR</span>
+            I.SCHO<span>LAR</span>
           </h3>
         </div>
 
