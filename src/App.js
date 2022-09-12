@@ -15,7 +15,7 @@ function App() {
   const[id,setId] = useState(null)
 
   useEffect(()=>{
-    fetch('http://localhost:9292/scholarships')
+    fetch('https://guarded-earth-32848.herokuapp.com/scholarships')
     .then(response => response.json())
     .then(data => setSholarships(data))
   },[]);

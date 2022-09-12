@@ -3,7 +3,7 @@ import React from "react";
 function SavedCard({name,organizer,deadline,description, link,id, handleDelete}){
     function handleClick(e){
         
-        fetch(`http://localhost:9292/saved_scholarships/${id}`,{
+        fetch(`https://guarded-earth-32848.herokuapp.com/saved_scholarships/${id}`,{
             method:"DELETE",
         })
         .then(resp => resp.json())

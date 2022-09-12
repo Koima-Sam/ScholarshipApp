@@ -12,7 +12,7 @@ function Login({setId, setLoggedIn}){
     function loginUser(e){
         e.preventDefault()
         // console.log(userObj)
-        fetch(`http://localhost:9292/users/${userObj.email}`)
+        fetch(`https://guarded-earth-32848.herokuapp.com/users/${userObj.email}`)
         .then(resp => resp.json())
         .then(data =>{
             data.password === userObj.password ? initiateLogin(data.id): alert("Invalid password")

@@ -4,7 +4,7 @@ import SavedCard from "./SavedCard";
 function Saved({id}){
     const[scholar, setScholar] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:9292/saved_scholarships')
+        fetch('https://guarded-earth-32848.herokuapp.com/saved_scholarships')
         .then(response => response.json())
         .then(data => setScholar(data))
     },[scholar]);

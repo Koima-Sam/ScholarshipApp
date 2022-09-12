@@ -20,7 +20,7 @@ function Register({setId, setLoggedIn}){
     function createUser(e){
         // e.preventDefault()
         // console.log(JSON.stringify(user))
-        fetch("http://localhost:9292/users",{
+        fetch("https://guarded-earth-32848.herokuapp.com/users",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"

@@ -8,7 +8,7 @@ function Card({name,organizer,deadline,description, link,s_id,id, isLogged}){
             alert("login to save a scholarship")
         }
         else{
-            fetch('http://localhost:9292/saved_scholarships',{
+            fetch('https://guarded-earth-32848.herokuapp.com/saved_scholarships',{
             method:"POST",
             headers:{
                 "Content_Type" : "application/json"
