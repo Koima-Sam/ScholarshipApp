@@ -27,8 +27,8 @@ Click on this [Link](https://scholarship-app.netlify.app/) to acces the website
 ## Installations
 fork the repository
 clone it to your local device <br>
-git clone url 
-`<br>
+
+`git clone url `<br>
 then navigate to the root folder and open with your editor<br>
 `code .` <br>
 
