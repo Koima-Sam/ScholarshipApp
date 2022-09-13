@@ -41,6 +41,7 @@ then navigate to the root folder and open with your editor<br>
 <li>React</li>
 <li>API's</li>
 <li>CSS</li>
+<li>Ruby</li>
 </ul>
 
 ## LICENSE
