@@ -18,7 +18,7 @@ function SavedCard({name,organizer,deadline,description, link,id, handleDelete})
             <p>{description}</p>
 
             <div id="btns" className="buttons">
-                <a href={link} targe="_blank">Apply now</a>
+                <a href={link} targe="_blank" rel="noreferrer">Apply now</a>
                 <p className="btns" onClick={handleClick}>Discard</p>
             </div>
         </div>
