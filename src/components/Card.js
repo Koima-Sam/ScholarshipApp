@@ -27,7 +27,7 @@ function Card({name,organizer,deadline,description, link,s_id,id, isLogged}){
             <p className="desc">{description}</p>
 
             <div id="btns" className="buttons">
-                <a href={link}>Apply now</a>
+                <a href={link} target="_blank">Apply now</a>
                 <p className="btns" onClick={handleClick}>Save</p>
             </div>
         </div>
